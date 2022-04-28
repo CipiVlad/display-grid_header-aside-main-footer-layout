@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: 90px 600px 90px;
+    grid-template-areas:
+        "A A A A"
+        "B B D D"
+        "C C C C"
+    ;
+    color: white;
+    border: 1px solid white;
+
+}
+
+header {
+    grid-area: A;
+    background-color: blue;
+    border: 1px solid white;
+
+}
+
+aside {
+    grid-area: B;
+    background-color: green;
+    border: 1px solid white;
+
+}
+
+main {
+    grid-area: D;
+    background-color: red;
+    border: 1px solid white;
+
+}
+
+footer {
+    grid-area: C;
+    background-color: purple;
+}
